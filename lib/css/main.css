@@ -1,0 +1,20 @@
+@import url('typography.css');
+@font-face {
+	font-family: WorkSans;
+	src: url('../fonts/WorkSans-Regular.ttf')
+}
+@font-face {
+	font-family: WorkSans;
+	font-weight: bold;
+	src: url('../fonts/WorkSans-SemiBold.ttf');
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: WorkSans;
+	font-size: 1rem;
+}
