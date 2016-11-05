@@ -1,0 +1,24 @@
+{
+  "name": "clipper",
+  "version": "0.1.0",
+  "description": "Program do zapisywania historii schowka",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wilkoklak/clipper.git"
+  },
+  "author": "Artur Boryś",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilkoklak/clipper/issues"
+  },
+  "homepage": "https://github.com/wilkoklak/clipper#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "electron": "^1.4.5",
+    "reset.css": "^2.0.2"
+  }
+}
