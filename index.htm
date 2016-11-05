@@ -5,19 +5,41 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' href='node_modules/reset.css/reset.css'>
 	<link rel='stylesheet' href='lib/css/main.css'>
+	<link rel='stylesheet' ng-href='lib/css/{{config.theme}}.css'>
+	<link rel='stylesheet' href='node_modules/components-font-awesome/css/font-awesome.min.css'>
 	<title ng-bind='strings.APP_TITLE'>clipper</title>
 	<script src='node_modules/angular/angular.js'></script>
 </head>
 <body>
 	<main>
-		<header>
+		<div ng-show='settingsWindow'>
+			<div id='settingsDark' ng-click='settingsWindow = !settingsWindow'></div>
+			<div style='position: absolute; top: 20%; width: 100%; z-index: 10;'>
+				<div id='settingsWindow'>
+					<h1>{{ strings.SETTINGS }}</h1>
+					<p>{{ strings.SETTINGS_ACTIVE }} <input type='checkbox' ng-model='config.active'></p>
+					<p>{{ strings.SETTINGS_LOCALE }}
+						<select ng-init='config.locale = config.locale' ng-model='config.locale' ng-options='locale for locale in locales'>
+						</select>
+					</p>
+					<p>{{ strings.SETTINGS_THEME }}
+						<select ng-init='config.theme = config.theme' ng-model='config.theme' ng-options='theme for theme in themes'>
+						</select>
+					<button ng-click='saveSettings()'>{{ strings.SETTINGS_SAVE }}</button>
+				</div>
+			</div>
+		</div>
+		<header class='main'>
 			<h1>{{ strings.APP_TITLE }}</h1>
 			<p>{{ strings.APP_PROMO }}</p>
+			<span ng-click='openSettings()' id='wrench' class='fa fa-wrench'></span>
 		</header>
 		<section id='clips'>
 			<div ng-repeat='clip in clips'>
 				<textarea readonly="readonly">{{ clip.content }}</textarea>
-				<span class='date' am-time-ago='clip.dt'></span>
+				<span am-time-ago='clip.dt'></span>
+				<button ng-click='copy(clip.content)'>Kopiuj</button>
+				<button ng-click='delete(clip.rowid)'>Usuń</button>
 			</div>
 		</section>
 	</main>

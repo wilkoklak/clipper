@@ -1,0 +1,40 @@
+::-webkit-scrollbar-thumb {
+	background: #444;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+body {
+	background: #111;
+	color: #f4f4f4;
+}
+button {
+	background: #222;
+	color: #f4f4f4;
+}
+button:hover {
+	background: #444;
+}
+select {
+	background: #222;
+	color: #f4f4f4;
+}
+
+#clips div textarea {
+	background: #222;
+	border-color: #555;
+	color: #f4f4f4;
+}
+
+#wrench:hover {
+	color: #ccc;
+}
+
+#settingsDark {
+	background: rgba(0, 0, 0, 0.5);
+}
+#settingsWindow {
+	background: #111;
+	box-shadow: 0 0 2px;
+}

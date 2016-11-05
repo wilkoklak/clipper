@@ -19,6 +19,7 @@
   "dependencies": {
     "angular": "^1.5.8",
     "angular-moment": "^1.0.0",
+    "components-font-awesome": "^4.7.0",
     "electron": "^1.4.5",
     "moment": "^2.15.2",
     "reset.css": "^2.0.2"

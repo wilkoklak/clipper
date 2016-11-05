@@ -1,4 +1,9 @@
 {
 	"APP_TITLE": "clipper",
-	"APP_PROMO": "Clipper is an app that lets you save your clipboard history."
+	"APP_PROMO": "Clipper is an app that lets you save your clipboard history.",
+	"SETTINGS": "Settings",
+	"SETTINGS_ACTIVE": "Active",
+	"SETTINGS_LOCALE": "Locale",
+	"SETTINGS_THEME": "Theme",
+	"SETTINGS_SAVE": "Save"
 }
