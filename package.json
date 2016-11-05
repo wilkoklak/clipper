@@ -1,6 +1,6 @@
 {
   "name": "clipper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Program do zapisywania historii schowka",
   "main": "index.js",
   "scripts": {
