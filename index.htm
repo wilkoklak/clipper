@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app='mainApp' ng-controller='mainCtrl' lang='{{locale}}' ng-cloak>
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='node_modules/reset.css/reset.css'>
+	<link rel='stylesheet' href='lib/css/main.css'>
+	<title ng-bind='strings.APP_TITLE'>clipper</title>
+	<script src='node_modules/angular/angular.js'></script>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>{{ strings.APP_TITLE }}</h1>
+			<p>{{ strings.APP_PROMO }}</p>
+		</header>
+		<section id='clips'>
+			<div ng-repeat='clip in clips'>
+				<textarea readonly="readonly">{{ clip.content }}</textarea>
+				<span class='date' am-time-ago='clip.dt'></span>
+			</div>
+		</section>
+	</main>
+	<script src='node_modules/moment/min/moment-with-locales.min.js'></script>
+	<script src='node_modules/angular-moment/angular-moment.min.js'></script>
+	<script src='lib/js/main.js'></script>
+</body>
+</html>
