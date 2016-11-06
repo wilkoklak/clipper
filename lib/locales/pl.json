@@ -1,6 +1,8 @@
 {
 	"APP_TITLE": "clipper",
 	"APP_PROMO": "Clipper, to aplikacja pozwalająca na zapisywanie historii schowka.",
+	"BUTTONS_COPY": "Kopiuj",
+	"BUTTONS_DELETE": "Usuń",
 	"SETTINGS": "Ustawienia",
 	"SETTINGS_ACTIVE": "Aktywny",
 	"SETTINGS_LOCALE": "Język",

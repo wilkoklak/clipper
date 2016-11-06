@@ -38,8 +38,8 @@
 			<div ng-repeat='clip in clips'>
 				<textarea readonly="readonly">{{ clip.content }}</textarea>
 				<span am-time-ago='clip.dt'></span>
-				<button ng-click='copy(clip.content)'>Kopiuj</button>
-				<button ng-click='delete(clip.rowid)'>Usuń</button>
+				<button ng-click='copy(clip.content)'>{{ strings.BUTTONS_COPY }}</button>
+				<button ng-click='delete(clip.rowid)'>{{ strings.BUTTONS_DELETE }}</button>
 			</div>
 		</section>
 	</main>

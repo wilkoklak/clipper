@@ -1,6 +1,8 @@
 {
 	"APP_TITLE": "clipper",
 	"APP_PROMO": "Clipper is an app that lets you save your clipboard history.",
+	"BUTTONS_COPY": "Copy",
+	"BUTTONS_DELETE": "Delete",
 	"SETTINGS": "Settings",
 	"SETTINGS_ACTIVE": "Active",
 	"SETTINGS_LOCALE": "Locale",
