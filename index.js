@@ -8,7 +8,7 @@ var main;
 
 // Utworzenie głównego okna
 function createMain() {
-	main = new BrowserWindow({width: 300, height: 500});
+	main = new BrowserWindow({width: 375, height: 600});
 	main.loadURL(url.format({
 		pathname: path.join(__dirname, 'index.htm'),
 		protocol: 'file:',
