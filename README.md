@@ -13,4 +13,4 @@ An app that lets you save clipboard history
 ![EN light](https://i.imgur.com/PaLthpo.png)
 ![EN dark](https://i.imgur.com/vccEXI3.png)
 
-## Najnowsza wersja: [v1.0.2](https://github.com/wilkoklak/clipper/releases/tag/1.0.2)
+## Najnowsza wersja: [v1.0.3](https://github.com/wilkoklak/clipper/releases/tag/1.0.3)
